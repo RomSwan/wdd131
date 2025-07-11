@@ -5,16 +5,26 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 1.2rem;
 }
 
 
 /* NAV */
-nav ul {
+#menu {
+	display: none;
+}
+
+nav {
+    background-color: grey;
+    padding: 1rem;
+    border: 2px solid black;
+}
+
+.navigation {
     display: flex;
     margin: 0;
     padding: 0;
-    gap: 1rem;
+    gap: 2rem;
     list-style: none;
 }
 
@@ -23,6 +33,11 @@ nav a {
     text-decoration: none;
 }
 
-nav ul a:hover {
+nav a:hover {
     color: var(--accent-colour);
+    text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
 }
