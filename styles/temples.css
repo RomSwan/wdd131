@@ -14,6 +14,16 @@ body {
     font-size: 2rem;
 }
 
+/* HEADER */
+header {
+    background-color: var(--secondary-colour);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+}
+
 /* MAIN */
 main { 
     max-width: 1000px;
@@ -55,4 +65,62 @@ footer {
 
 #lastModified {
     font-size: small;
+}
+
+/* Hamburger menu - SMALL VIEW */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: white;
+	position: absolute;
+	top: .5rem;
+	right: .5rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	list-style: none;
+	background-color: grey;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+	transition: max-height .75s ease-in-out;
+    overflow: hidden;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-decoration: none;
+	color: white;
+	width: 100%;  
+}
+
+.navigation a:hover {
+    color: var(--accent-colour);
+    text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px  1px 0 black,
+    1px  1px 0 black;
+}
+
+.open a {
+	display: block;
+}
+
+.open.navigation {
+    border: 2px solid black;
+    max-height: 300px;
 }
