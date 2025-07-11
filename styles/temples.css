@@ -1,0 +1,51 @@
+:root {
+    --main-colour: #00BFB2; /*Light Sea Green*/
+    --secondary-colour: #1A5E63; /*Caribbean Current*/
+    --accent-colour: #E8E1EF; /*Lavender*/
+}
+
+body {
+    font-family: "Domine", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* MAIN */
+main { 
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.gallery {
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-gap: 50px;
+    place-items: center;
+}
+
+.temple-img {
+    width: 250px;
+    border: 2px solid var(--main-colour);
+}
+
+figcaption {
+    text-align: center;
+}
+
+
+/* FOOTER */
+footer {
+    grid-column: 1 / 4;
+    background-color: var(--secondary-colour);
+    color: white;
+    text-align: center;
+}
+
+#lastModified {
+    font-size: small;
+}

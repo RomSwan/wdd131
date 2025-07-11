@@ -1,0 +1,28 @@
+/* HEADER */
+header {
+    background-color: var(--secondary-colour);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+/* NAV */
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    color: var(--accent-colour);
+}
