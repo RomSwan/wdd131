@@ -21,14 +21,64 @@
     <main>
         <section class="hero">
             <picture>
-                <source srcset="images/poland-mobile.jpg" media="(max-width: 500px)">
+                <source srcset="images/poland-mobile.jpg" media="(max-width: 800px)">
                 <img src="images/poland-wide.webp" alt="Polish photo in Krakow">
             </picture>
         </section>
 
-        <section class="info data"></section>
+        <section class="info data">
+            <div class="info-type">
+                <h2>Data</h2>
+            </div>
 
-        <section class="info weather"></section>
+            <div class="info-list">
+                <ul class="list left-side">
+                    <li>Area:</li>
+                    <li>Population:</li>
+                    <li>Capital:</li>
+                    <li>Language:</li>
+                    <li>Currency:</li>
+                    <li>Time Zone:</li>
+                    <li>Calling Code:</li>
+                    <li>Internet TLD:</li>
+                </ul>
+
+                <ul class="list right-side">
+                    <li>312,696 sq km</li> <!--Area-->
+                    <li id="population"></li> <!--Population-->
+                    <li>Warsaw</li> <!--Capital City-->
+                    <li>Polish</li> <!--Language-->
+                    <li>Złoty (PLN or zł)</li> <!--Currency-->
+                    <li>UTC+2</li> <!--Time Zone-->
+                    <li>+48</li> <!--Calling Code-->
+                    <li>.pl</li> <!--Internet TLD-->
+                </ul>
+            </div>
+        </section>
+
+        <section class="info weather">
+            <div class="info-type">
+                <h2>Weather</h2>
+            </div>
+
+            <div class="weather-symbol"></div> <!--Only visible in mobile view-->
+
+            <div class="info-list">
+                <ul class="list left-side">
+                    <li>Temperature:</li>
+                    <li>Conditions:</li>
+                    <li>Wind:</li>
+                    <li>Wind Chill:</li>
+                </ul>
+
+                <ul class="list right-side">
+                    <li id="temperature"></li>
+                    <li id="conditions"></li>
+                    <li id="wind"></li>
+                    <li id="wind-chill"></li>
+                </ul>
+            </div>
+        </section>
     </main>
 
     <footer>
