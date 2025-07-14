@@ -1,0 +1,17 @@
+:root {
+    --main-colour: #00BFB2; /*Light Sea Green*/
+    --secondary-colour: #1A5E63; /*Caribbean Current*/
+    --accent-colour: #E8E1EF; /*Lavender*/
+}
+
+/*FOOTER*/
+footer {
+    grid-column: 1 / 4;
+    background-color: var(--secondary-colour);
+    color: white;
+    text-align: center;
+}
+
+#lastModified {
+    font-size: small;
+}
