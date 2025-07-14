@@ -4,6 +4,11 @@
     --accent-colour: #E8E1EF; /*Lavender*/
 }
 
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
 /*FOOTER*/
 footer {
     grid-column: 1 / 4;
