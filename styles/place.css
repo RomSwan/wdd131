@@ -74,6 +74,10 @@ h2 {
     content: " 🌧️";
 }
 
+.weather-symbol {
+    display: none;
+}
+
 .info-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -154,12 +158,17 @@ footer {
         content: "";
     }
 
-    .weather-symbol::after {
-        content: "🌧️";
-        font-size: 5rem;
+    .weather-symbol {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 10px;
+    }
+
+    .weather-symbol img {
+        background-color: var(--secondary-colour);
+        padding: 10px;
+        border-radius: 20px;
     }
 
     .list {
