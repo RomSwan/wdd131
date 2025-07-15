@@ -71,7 +71,7 @@ h2 {
 }
 
 .weather h2::after {
-    content: " ⛅";
+    content: " 🌧️";
 }
 
 .info-list {
@@ -155,7 +155,7 @@ footer {
     }
 
     .weather-symbol::after {
-        content: "⛅";
+        content: "🌧️";
         font-size: 5rem;
         display: flex;
         align-items: center;
