@@ -70,7 +70,7 @@ const temples = [
     templeName: "Cardston Alberta",
     location: "Alberta, Canada",
     dedicated: "1923, August, 29",
-    area: 13287,
+    area: 88562,
     imageURL:
     "https://churchofjesuschristtemples.org/assets/img/temples/cardston-alberta-temple/cardston-alberta-temple-13287-main.jpg"
   },
@@ -78,7 +78,7 @@ const temples = [
     templeName: "Frankfurt Germany",
     location: "Frankfurt, Germany",
     dedicated: "1987, August, 30",
-    area: 38924,
+    area: 32895,
     imageURL:
     "https://churchofjesuschristtemples.org/assets/img/temples/frankfurt-germany-temple/frankfurt-germany-temple-38924-main.jpg"
   },
@@ -86,7 +86,7 @@ const temples = [
     templeName: "Yigo Guam",
     location: "Yigo, Guam",
     dedicated: "2019, May, 4",
-    area: 26495,
+    area: 6861,
     imageURL:
     "https://churchofjesuschristtemples.org/assets/img/temples/yigo-guam-temple/yigo-guam-temple-26495-main.jpg"
   }
