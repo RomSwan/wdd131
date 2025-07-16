@@ -44,7 +44,7 @@ const temples = [
   },
   { // #05
     templeName: "Washington D.C.",
-    location: "Kensington, Maryland, United States",
+    location: "Maryland, United States",
     dedicated: "1974, November, 19",
     area: 156558,
     imageUrl:
@@ -68,7 +68,7 @@ const temples = [
   },
   { // #08
     templeName: "Cardston Alberta",
-    location: "Alberta, Canada",
+    location: "Cardston, Alberta, Canada",
     dedicated: "1923, August, 29",
     area: 88562,
     imageUrl:
@@ -83,12 +83,12 @@ const temples = [
     "https://churchofjesuschristtemples.org/assets/img/temples/frankfurt-germany-temple/frankfurt-germany-temple-38924-main.jpg"
   },
   { // #10
-    templeName: "Yigo Guam",
-    location: "Yigo, Guam",
-    dedicated: "2019, May, 4",
-    area: 6861,
+    templeName: "Copenhagen Denmark",
+    location: "Copenhagen, Denmark",
+    dedicated: "2004, May, 23",
+    area: 25000,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/yigo-guam-temple/yigo-guam-temple-26495-main.jpg"
+    "https://churchofjesuschristtemples.org/assets/img/temples/copenhagen-denmark-temple/copenhagen-denmark-temple-16169-main.jpg"
   }
 ];
 
@@ -103,15 +103,19 @@ function createTempleCard() {
     let location = document.createElement("p");
     let dedication = document.createElement("p");
     let area = document.createElement("p");
+    let frame = document.createElement("picture")
     let image = document.createElement("img");
 
     // Card Content
+    card.setAttribute("class", "card"); // Give card a class of "card"
     name.textContent = temple.templeName;
     location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
     dedication.innerHTML = `<span class="label">Dedication:</span> ${temple.dedicated}`;
     area.innerHTML = `<span class="label">Area:</span> ${temple.area} sq ft`;
 
-    // Image Attributes
+    // Image/Frame Attributes
+    frame.setAttribute("class", "frame");
+    image.setAttribute("class", "temple-image");
     image.setAttribute("src", temple.imageUrl);
     image.setAttribute("alt", `${temple.templeName} Temple`);
     image.setAttribute("loading", "lazy");
@@ -121,7 +125,8 @@ function createTempleCard() {
     card.appendChild(location);
     card.appendChild(dedication);
     card.appendChild(area);
-    card.appendChild(image);
+    frame.appendChild(image);
+    card.appendChild(frame);
 
     // Add Card to HTML
     document.querySelector(".gallery").appendChild(card);

@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 /* HEADER */
@@ -32,7 +32,8 @@ main {
 
 h2 {
     text-align: center;
-    margin-bottom: 5px;
+    margin: 1rem;
+    font-size: 2rem;
 }
 
 .gallery {
@@ -41,10 +42,48 @@ h2 {
     place-items: center;
 }
 
-.gallery div {
-    max-width: 100%;
+.gallery img {
+    display: inline-block;
+}
+
+.card {
+    background-color: lightgrey;
+    color: black;
+    border: 2px solid darkgrey;
+    margin: 5px;
+    max-width: 300px;
+    width: 100%;
     height: auto;
-    border: 2px solid var(--main-colour);
+}
+
+.card p {
+    margin-left: 10px;
+}
+
+.label {
+    font-weight: bold;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.temple-image {
+    display: block;
+    margin: auto;
+    max-width: 280px;
+    height: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 2px;
 }
 
 
