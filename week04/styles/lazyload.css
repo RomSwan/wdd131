@@ -1,0 +1,20 @@
+img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    max-height: 600px;
+    display: block;
+    margin: auto;
+    background-color: black;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

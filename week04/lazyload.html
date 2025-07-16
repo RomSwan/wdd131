@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load Activity</title>
+    <meta name="author" content="Brendan Brady">
+    <meta name="description" content="Lazy loading activity">
+    <!--CSS/JS-->
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Lazy Loading</h1>
+
+        <img src="images/cardston-alberta-temple.webp" loading="lazy"> <!--1-->
+        <img src="images/cardston-alberta-temple.webp" loading="lazy"> <!--2-->
+        <img src="images/cardston-alberta-temple.webp" loading="lazy"> <!--3-->
+        <img src="images/cardston-alberta-temple.webp" loading="lazy"> <!--4-->
+        <img src="images/cardston-alberta-temple.webp" loading="lazy"> <!--5-->
+        <img src="images/cardston-alberta-temple.webp" loading="lazy"> <!--6-->
+    </main>
+
+    <footer>
+        <p>©<span id="currentYear"></span> 🥟 Brendan Brady 🥟 Poland</p>
+
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
