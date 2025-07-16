@@ -96,7 +96,7 @@ const temples = [
 createTempleCard();
 
 function createTempleCard() {
-  temples.foreach(temple => {
+  temples.forEach(temple => {
     // Variables
     let card = document.createElement("div");
     let name = document.createElement("h3");
@@ -106,15 +106,15 @@ function createTempleCard() {
     let image = document.createElement("img");
 
     // Card Content
-    name.textContent = name.templeName;
+    name.textContent = temple.templeName;
     location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
-    dedication.innerHTML = `<span class="label">Dedication:</span> ${temple.dedicated}`
-    area.innerHTML = `<span class="label">Area:</span> ${temple.area} sq ft`
+    dedication.innerHTML = `<span class="label">Dedication:</span> ${temple.dedicated}`;
+    area.innerHTML = `<span class="label">Area:</span> ${temple.area} sq ft`;
 
     // Image Attributes
-    image.setAttribute("src", imageUrl);
+    image.setAttribute("src", temple.imageUrl);
     image.setAttribute("alt", `${temple.templeName} Temple`);
-    image.setAttribute("loading", "lazy")
+    image.setAttribute("loading", "lazy");
 
     // Append Variables to Card
     card.appendChild(name);
