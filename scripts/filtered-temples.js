@@ -8,7 +8,7 @@ hamButton.addEventListener('click', () => {
 });
 
 
-// Temples
+// Temple Array
 const temples = [
   { // #01
     templeName: "Aba Nigeria",
@@ -71,7 +71,7 @@ const temples = [
     location: "Alberta, Canada",
     dedicated: "1923, August, 29",
     area: 88562,
-    imageURL:
+    imageUrl:
     "https://churchofjesuschristtemples.org/assets/img/temples/cardston-alberta-temple/cardston-alberta-temple-13287-main.jpg"
   },
   { // #09
@@ -79,7 +79,7 @@ const temples = [
     location: "Frankfurt, Germany",
     dedicated: "1987, August, 30",
     area: 32895,
-    imageURL:
+    imageUrl:
     "https://churchofjesuschristtemples.org/assets/img/temples/frankfurt-germany-temple/frankfurt-germany-temple-38924-main.jpg"
   },
   { // #10
@@ -87,7 +87,43 @@ const temples = [
     location: "Yigo, Guam",
     dedicated: "2019, May, 4",
     area: 6861,
-    imageURL:
+    imageUrl:
     "https://churchofjesuschristtemples.org/assets/img/temples/yigo-guam-temple/yigo-guam-temple-26495-main.jpg"
   }
 ];
+
+// Temple Card Function
+createTempleCard();
+
+function createTempleCard() {
+  temples.foreach(temple => {
+    // Variables
+    let card = document.createElement("div");
+    let name = document.createElement("h3");
+    let location = document.createElement("p");
+    let dedication = document.createElement("p");
+    let area = document.createElement("p");
+    let image = document.createElement("img");
+
+    // Card Content
+    name.textContent = name.templeName;
+    location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+    dedication.innerHTML = `<span class="label">Dedication:</span> ${temple.dedicated}`
+    area.innerHTML = `<span class="label">Area:</span> ${temple.area} sq ft`
+
+    // Image Attributes
+    image.setAttribute("src", imageUrl);
+    image.setAttribute("alt", `${temple.templeName} Temple`);
+    image.setAttribute("loading", "lazy")
+
+    // Append Variables to Card
+    card.appendChild(name);
+    card.appendChild(location);
+    card.appendChild(dedication);
+    card.appendChild(area);
+    card.appendChild(image);
+
+    // Add Card to HTML
+    document.querySelector(".gallery").appendChild(card);
+  })
+}

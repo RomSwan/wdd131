@@ -35,21 +35,19 @@ h2 {
     margin-bottom: 5px;
 }
 
-#gallery {
+.gallery {
     display:grid; 
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     place-items: center;
 }
 
-.temple-img {
+.gallery div {
     max-width: 100%;
     height: auto;
     border: 2px solid var(--main-colour);
 }
 
-figcaption {
-    text-align: center;
-}
+
 
 
 /* FOOTER */
