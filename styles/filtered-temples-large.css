@@ -1,0 +1,28 @@
+@media (min-width: 800px) {
+    #menu {
+        display: none;
+    }
+
+    nav {
+        padding: 0;
+        border: 2px solid black;
+    }   
+
+    .navigation {
+		flex-direction: row;
+        max-height: 300px;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+
+    .navigation {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        gap: 2rem;
+        list-style: none;
+    }
+}
