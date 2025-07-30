@@ -16,6 +16,65 @@
     <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div id="form-container">
+        <header><h1>Product Review</h1></header>
+
+        <main>
+            <form method="get" action="review.html">
+                <!--Product Name-->
+                <section id="product-name">
+                    <label for="product">Product Name</label>
+                    <select id="product" name="product" required>
+                        <option value="" disabled selected>Select a Product ...</option>
+                    </select>
+                </section>
+
+                <!--Rating-->
+                <fieldset id="rating">
+                    <legend>Overall Rating</legend>
+                    <label><input type="radio" name="rating" value="1" required> ☆</label>
+                    <label><input type="radio" name="rating" value="2"> ☆☆</label>
+                    <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
+                    <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
+                    <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+                </fieldset>
+
+                <!--Installation Date-->
+                <section id="install-date">
+                    <label for="installation">Date of Installation</label>
+                    <input id="date" type="date" name="installation" required>
+                </section>
+
+                <!--Useful Features-->
+                <fieldset id="useful-features">
+                    <legend>Which features did you find useful in the product?<br><i class="unbold">(Check all that apply)</i></legend>
+                    <label><input id="feature1" type="checkbox" name="features" value="design"> Design</label>
+                    <label><input id="feature2" type="checkbox" name="features" value="durability"> Durability</label>
+                    <label><input id="feature3" type="checkbox" name="features" value="ease"> Ease of Use</label>
+                    <label><input id="feature4" type="checkbox" name="features" value="performance"> Performance</label>
+                </fieldset>
+
+                <!--Written Review-->
+                <section id="written-review">
+                    <label for="review">Written Review <i class="unbold">(optional)</i></label>
+                    <textarea id="review" name="review" rows="4" cols="30"></textarea>
+                </section>
+
+                <!--User Name-->
+                <section id="user-name">
+                    <label for="name">Your Name <i class="unbold">(optional)</i></label>
+                    <input id="name" type="text" name="name">
+                </section>
+
+                <!--Submit-->
+                <input id="submit-button" type="submit" value="Post Review">
+            </form>
+        </main>
+
+        <footer>
+            <p>©<span id="currentYear"></span> 🥟 Brendan Brady 🥟 Poland</p>
+            <p id="lastModified"></p>
+        </footer>
+    </div>
 </body>
 </html>
