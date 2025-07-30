@@ -1,0 +1,22 @@
+/*BASE QUALITIES*/
+:root {
+    --main-colour: #A1BBA2; /*Laurel Green*/
+    --secondary-colour: #F7E5E3; /*Misty Rose*/
+    --accent-colour: #C3A59D; /*Tuscany*/
+}
+
+body {
+    font-family: "Domine", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*FOOTER*/
+footer {
+    grid-column: 1 / 4;
+    text-align: center;
+}
+
+#lastModified {
+    font-size: small;
+}
