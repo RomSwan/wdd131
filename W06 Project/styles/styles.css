@@ -1,0 +1,50 @@
+:root {
+    --main-colour: #D8125B; /*Fuchisa*/
+    --secondary-colour: #2C2E39; /*Dark Grey*/
+    --accent-colour1: #FBF5E5; /*Old Lace*/
+    --accent-colour2: #0d031b; /*Obsidian Black*/
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 auto;
+    color: var(--accent-colour2);
+}
+
+/*HEADER*/
+header {
+    display: flex;
+    gap: 20px;
+    background-color: var(--main-colour);
+    color: var(--accent-colour1);
+    font-weight: 600;
+    padding: 8px;
+}
+
+h1 {
+    font-size: 4.5rem;
+    margin: 15px 0;
+    padding: 0;
+    text-shadow: 4px 4px 0px rgba(44,46,57,0.5);
+}
+
+.logo {
+    width: auto;
+    height: 100px;
+}
+
+/*FOOTER*/
+footer {
+    grid-column: 1 / 4;
+    text-align: center;
+    background-color: var(--main-colour);
+    color: var(--accent-colour1);
+    font-weight: 600;
+    padding: 1px;
+}
+#lastModified {
+    font-size: small;
+}
