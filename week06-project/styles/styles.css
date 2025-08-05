@@ -28,6 +28,7 @@ header {
 #logo-title {
     display: flex;
     gap: 1rem;
+    margin: 0;
 }
 
 .logo {
@@ -37,6 +38,7 @@ header {
 
 h1 {
     font-size: 4.5rem;
+    white-space: nowrap;
     margin: 15px 0;
     padding: 0;
     text-shadow: 4px 4px 0px rgba(44,46,57,0.5);
@@ -46,17 +48,20 @@ nav {
     display: flex;
     align-items: center;
     margin-right: 2.5rem;
+    margin-left: 0;
 }
 
 nav ul {
     display: flex;
     gap: 1rem;
     list-style: none;
+    margin: 0;
 }
 
 nav a {
     font-size: 1.2rem;
     text-decoration: none;
+    white-space: nowrap;
     color: var(--accent-colour1);
     margin: 0;
     padding: 8px;
@@ -96,3 +101,61 @@ footer {
 #lastModified {
     font-size: small;
 }
+
+#menu {
+    display: none;
+}
+
+/*MOBILE VIEW*/
+/*##############################*/
+@media (max-width: 1050px) {
+    #menu {
+        display: block;
+        font-size: 2rem;
+        border: 0;
+        background: none;
+        color: var(--accent-colour1);
+        position: absolute;
+        top: .5rem;
+        right: 1rem;
+    }
+
+    #menu::before {
+        content: "☰";
+    }
+
+    #menu.open::before {
+        content: "✖️";
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        list-style: none;
+        background-color: var(--secondary-colour);
+        margin: 0;
+        padding: 0;
+        max-height: 0;
+        transition: max-height .75s ease-in-out;
+        overflow: hidden;
+    }
+
+    .navigation a {
+        display: none;
+        padding: .5rem;
+        text-decoration: none;
+        color: white;
+        width: 100%;  
+    }
+
+    .open a {
+        display: block;
+    }
+
+    .open.navigation {
+        border: 2px solid black;
+        max-height: 300px;
+    }
+}
+/*##############################*/
