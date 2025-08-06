@@ -144,6 +144,11 @@ select, input {
 /*MOBILE VIEW*/
 /*##############################*/
 @media (max-width: 1050px) {
+    #form p {
+        max-width: 430px;
+        text-align: center;
+    }
+
     /*LOCATION*/
     #location {
         grid-template-columns: 50% 48%;
