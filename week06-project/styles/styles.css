@@ -14,6 +14,15 @@ body {
     color: var(--accent-colour2);
 }
 
+section {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    border-bottom: 5px solid var(--main-colour);
+}
+
 /*HEADER*/
 header {
     display: flex;

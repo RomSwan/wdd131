@@ -1,0 +1,174 @@
+:root {
+    --main-colour: #D8125B; /*Fuchisa*/
+    --secondary-colour: #2C2E39; /*Dark Grey*/
+    --accent-colour1: #FBF5E5; /*Old Lace*/
+    --accent-colour2: #0d031b; /*Obsidian Black*/
+}
+
+/*FORM*/
+#form {
+    background-color: var(--accent-colour1);
+    padding-bottom: 30px;
+}
+
+#form p {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+#form-container {
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+}
+
+form {
+    background-color: var(--secondary-colour);
+    color: var(--accent-colour1);
+    padding: 1px 15px 15px 15px;
+    margin: 10px 0 10px 0;
+    border-radius: 10px;
+}
+
+div {
+    padding: 0 0 10px 0;
+}
+
+label, legend {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+legend {
+    margin-bottom: -5px;
+}
+
+#email, #date, #guitar, #info {
+    width: 100%;
+    box-sizing: border-box;
+    padding: .75rem;
+    font-size: 1rem;
+    border: 2px solid var(--main-colour);
+    border-radius: 10px;
+}
+
+input[type="checkbox"] { 
+    transform: scale(1.75);
+    margin: 0 1rem;
+}
+
+.unbold {
+    font-weight: 400;
+    cursor: pointer;
+}
+
+select, input {
+    cursor: pointer;
+}
+
+#email {
+    cursor: text;
+}
+
+#contact-button {
+    margin: 10px;
+    background-color: var(--main-colour);
+    color: var(--accent-colour1);
+    transition: box-shadow .3s ease, transform .5s ease, color .3s ease;
+    height: 75px;
+    width: 325px;
+    border-radius: 8px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#contact-button:hover {
+    box-shadow: 4px 4px 5px var(--accent-colour2);
+    transform: scale(1.02);
+    color: var(--accent-colour2);
+    cursor: pointer;
+}
+
+/*LOCATION*/
+#location {
+    display: grid;
+    grid-template-columns: 30% 65%;
+    height: 400px;
+    margin: 0;
+    overflow: hidden;
+}
+
+#map-legend {
+    margin: 0;
+    padding: 30px;
+    background-color: var(--accent-colour1);
+    box-shadow: 0 0 100px 5px var(--secondary-colour);
+    border: 1px solid var(--secondary-colour);
+    border-radius: 8px;
+}
+
+#map-legend h2 {
+    margin: 0;
+}
+
+#map-legend p {
+    white-space: nowrap;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    border-left: 3px solid var(--main-colour);
+    border-right: 3px solid var(--main-colour);
+    overflow: hidden;
+}
+
+#map iframe {
+    width: 100%;
+    height: 101%;
+    padding: 0;
+    margin: 0;
+}
+
+/*MOBILE VIEW*/
+/*##############################*/
+@media (max-width: 1050px) {
+    /*LOCATION*/
+    #location {
+        grid-template-columns: 50% 48%;
+    }
+
+    #map {
+        height: 300px;
+        border: 2px solid var(--main-colour);
+    }
+
+    #map iframe {
+        height: 103.5%;
+    }
+
+    #map-legend {
+        padding: 20px;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    /*LOCATION*/
+    #location {
+        grid-template-columns: 1fr;
+        height: 600px;
+    }
+}
+/*##############################*/
