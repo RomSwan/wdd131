@@ -47,6 +47,7 @@
     align-items: center;
     width: 100vw;
     background: radial-gradient(circle, white 70%, var(--secondary-colour) 100%);
+    border-bottom: 4px solid var(--main-colour);
 }
 
 .topInfo, .bottomInfo {
