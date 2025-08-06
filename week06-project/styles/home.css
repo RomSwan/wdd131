@@ -5,10 +5,6 @@
     --accent-colour2: #0d031b; /*Obsidian Black*/
 }
 
-main {
-    display: block;
-}
-
 section {
     display: grid;
     place-items: center;
