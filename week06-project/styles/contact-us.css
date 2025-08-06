@@ -14,10 +14,11 @@
 #form p {
     margin-top: 0;
     font-size: 1.2rem;
+    z-index: -1;
 }
 
 #form-container {
-    max-width: 450px;
+    max-width: 500px;
     width: 100%;
     text-align: center;
 }
@@ -164,6 +165,10 @@ select, input {
 }
 
 @media (max-width: 700px) {
+    /*FORM*/
+    #form-container {
+        max-width: 400px;
+    }
 
     /*LOCATION*/
     #location {
