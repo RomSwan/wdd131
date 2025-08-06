@@ -209,7 +209,7 @@ footer {
         max-height: 0;
     }
 
-    .socials, p {
+    .socials, .socials p {
         transform: scale(.75);
     }
 

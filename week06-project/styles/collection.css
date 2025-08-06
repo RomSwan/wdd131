@@ -1,0 +1,170 @@
+:root {
+    --main-colour: #D8125B; /*Fuchisa*/
+    --secondary-colour: #2C2E39; /*Dark Grey*/
+    --accent-colour1: #FBF5E5; /*Old Lace*/
+    --accent-colour2: #0d031b; /*Obsidian Black*/
+}
+
+/*CHOICE BAR*/
+#choice-bar {
+    background: radial-gradient(circle, white 40%, var(--secondary-colour) 100%);
+    border-bottom: 4px solid var(--main-colour);
+}
+
+#choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 20px 10px 20px;
+}
+
+#choice-bar h3 {
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.choice {
+    border: 1px solid var(--accent-colour2);
+    padding: 10px;
+    width: auto;
+    height: 120px;
+    border-radius: 10px;
+    transition: box-shadow .2s ease, transform .3s ease;
+}
+
+.choice:hover {
+    box-shadow: 4px 4px 5px var(--secondary-colour);
+    transform: scale(1.02);
+    color: var(--accent-colour2);
+    cursor: pointer;
+}
+
+/*GUITAR DISPLAY*/
+.display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    background: radial-gradient(circle, white 70%, var(--secondary-colour) 100%);
+}
+
+.topInfo, .bottomInfo {
+    width: 30vw;
+}
+
+.guitar-name {
+    font-size: 2.5rem;
+}
+
+.guitar-price {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.guitar-image {
+    width: 200px;
+    height: auto;
+}
+
+.bottomInfo {
+    margin: 20px 0;
+}
+
+.guitar-type {
+    font-size: 1.5rem;
+}
+
+.label {
+    font-weight: bold;
+}
+
+/*CONTACT*/
+#questions-container {
+    text-align: center;
+    margin: 50px;
+    background-color: var(--accent-colour1);
+    padding: 50px 100px 50px 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 100px 5px var(--secondary-colour);
+}
+
+#questions h2 {
+    font-size: 3.8rem;
+    padding: 0;
+    margin: 0 0 10px 0;
+    white-space: nowrap;
+}
+
+#contact-button {
+    margin: 50px;
+    background-color: var(--main-colour);
+    color: var(--accent-colour1);
+    transition: box-shadow .3s ease, transform .5s ease, color .3s ease;
+    height: 100px;
+    width: 400px;
+    border-radius: 8px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#contact-button:hover {
+    box-shadow: 4px 4px 5px var(--secondary-colour);
+    transform: scale(1.02);
+    color: var(--accent-colour2);
+    cursor: pointer;
+}
+
+#questions p {
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+}
+
+/*MOBILE VIEW*/
+/*##############################*/
+@media (max-width: 1050px) {
+    /*GUITAR DISPLAY*/
+    .topInfo, .bottomInfo {
+        width: 45vw;
+    }
+
+    /*CONTACT*/
+    #questions-container {
+        padding: 30px;
+    }
+
+    #questions h2 {
+        font-size: 2rem;
+    }
+
+    #contact-button {
+        width: 90%;
+        height: auto;
+        font-size: 1.5rem;
+        padding: 15px;
+        margin: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    /*CHOICE BAR*/
+    #choices {
+        background: radial-gradient(circle, white 60%, var(--secondary-colour) 100%);
+    }
+
+    /*GUITAR DISPLAY*/
+    .topInfo {
+        width: 80vw;
+        text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.5);
+    }
+
+    .bottomInfo {
+        width: auto;
+        padding: 0 50px;
+        background-color: var(--secondary-colour);
+        color: var(--accent-colour1);
+        border-radius: 8px;
+    }
+}
+/*##############################*/
