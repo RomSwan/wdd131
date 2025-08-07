@@ -26,13 +26,13 @@ guitars.forEach((guitar) => {
     select.appendChild(option);
 });
 
-// Calculate # of Reviews
-const reviewHTML = document.getElementById("review-count");
-if (reviewHTML) { // Check if #review-count exists
-    let count = Number(localStorage.getItem("review")) || 0;
+// Calculate # of Requests
+const form = document.getElementById("form");
+const requestCount = document.getElementById("request-count");
 
-    count++;
+let count = Number(localStorage.getItem("request")) || 0;
 
-    localStorage.setItem("review", count);
-    document.getElementById("review-count").textContent = count;
-}
+count++;
+
+localStorage.setItem("request", count);
+document.getElementById("request-count").textContent = `You have made ${count} requests.`;
