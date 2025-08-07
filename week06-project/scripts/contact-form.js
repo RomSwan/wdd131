@@ -32,7 +32,9 @@ const requestCount = document.getElementById("request-count");
 
 let count = Number(localStorage.getItem("request")) || 0;
 
-count++;
+form.addEventListener("submit", function (event) {
+    count++;
+    localStorage.setItem("request", count);
+});
 
-localStorage.setItem("request", count);
 document.getElementById("request-count").textContent = `You have made ${count} requests.`;

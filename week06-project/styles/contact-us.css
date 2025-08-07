@@ -170,6 +170,10 @@ select, input {
         text-align: center;
     }
 
+    #form-container p {
+        max-width: 500px;
+    }
+
     /*LOCATION*/
     #location {
         grid-template-columns: 50% 48%;
