@@ -157,7 +157,7 @@
     /*GUITAR DISPLAY*/
     .topInfo {
         width: 80vw;
-        text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.5);
+        text-shadow: 2px 2px 0px rgba(255, 255, 255, .5);
     }
 
     .bottomInfo {

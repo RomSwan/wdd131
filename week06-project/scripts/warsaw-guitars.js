@@ -1,4 +1,4 @@
-// HAMBURGER MENU BUTTON
+// Menu Button (Header)
 const hamButton = document.querySelector('#menu');
 const nav = document.querySelector('.navigation');
 
@@ -7,10 +7,10 @@ hamButton.addEventListener('click', () => {
   hamButton.classList.toggle('open');
 });
 
-//Get current year
+//Get current year (Footer)
 const currentYear = new Date().getFullYear();
 document.getElementById("currentYear").innerHTML = currentYear;
 
-//Last modified
+//Last modified (Footer)
 const lastModified = document.lastModified;
 document.getElementById("lastModified").innerHTML = `Last modified: ${lastModified}`;

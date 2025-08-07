@@ -16,7 +16,7 @@ const guitars = [
     },
 ];
 
-// Append guitars to Form
+// Append Guitars to Form
 const select = document.getElementById("guitar");
 
 guitars.forEach((guitar) => {

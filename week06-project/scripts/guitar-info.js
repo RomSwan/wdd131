@@ -63,9 +63,6 @@ function calculateDiscount(discount, price) {
     }
 }
 
-// Guitar Display
-//createGuitarDisplay(guitars));
-
 // Filters
 const home = document.querySelector("#hellcat") // Hellcat
 home.addEventListener("click", () => {
@@ -84,7 +81,7 @@ function createGuitarDisplay(guitarChoice) {
     document.querySelector(".guitar-info").innerHTML = ""; // Cleans output
 
   guitarChoice.forEach(guitar => {
-    // Variables
+    // Variables & Elements
     let display = document.createElement("div");
 
     let topInfo = document.createElement("div");
