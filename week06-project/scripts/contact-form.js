@@ -37,4 +37,10 @@ form.addEventListener("submit", function (event) {
     localStorage.setItem("request", count);
 });
 
-document.getElementById("request-count").textContent = `You have made ${count} requests.`;
+if (count = 1) { // I like to be grammatically correct
+    document.getElementById("request-count").textContent = `You have made ${count} request.`;
+}
+
+else {
+    document.getElementById("request-count").textContent = `You have made ${count} requests.`;
+}
