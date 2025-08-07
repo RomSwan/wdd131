@@ -37,7 +37,7 @@ form.addEventListener("submit", function (event) {
     localStorage.setItem("request", count);
 });
 
-if (count = 1) { // I like to be grammatically correct
+if (count == 1) { // I like to be grammatically correct
     document.getElementById("request-count").textContent = `You have made ${count} request.`;
 }
 
