@@ -140,6 +140,7 @@ footer {
         position: absolute;
         top: .5rem;
         right: 1rem;
+        cursor: pointer;
     }
 
     #menu::before {
